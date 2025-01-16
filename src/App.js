@@ -16,7 +16,7 @@ function App() {
           ? 'bg-blue-500'
           : 'bg-green-500';
   return (
-    <div className=" bg-gray-50">
+    <div className=" bg-gray-50 h-full max-h-screen">
       <div className="ease-soft-in-out  relative h-full max-h-screen bg-gray-50 transition-all duration-200 m-6">
         <nav className="absolute z-20 flex flex-wrap items-center justify-between w-full px-6 py-2  text-white transition-all shadow-none duration-250 ease-soft-in lg:flex-nowrap lg:justify-start" >
           <div className="flex items-center justify-between w-full px-6 py-1 mx-auto flex-wrap-inherit">
@@ -108,7 +108,7 @@ function App() {
 
         {/* /* habits Section */}
 
-        <div class="flex-none w-1/8 max-w-full px-3 mt-6 m-5">
+        <div class="flex-none w-1/8 max-w-full px-3 mt-6 m-5 relative">
           <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-lg rounded-2xl bg-clip-border">
             <div class="p-4 pb-0 mb-0 bg-white rounded-t-2xl flex items-center">
               <h3 class="pl-8 text-fuchsia-800">Habits</h3>
@@ -181,16 +181,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-      
+
               </div>
-              <div class="relative flex flex-col h-full min-w-0 break-words bg-white border-0 shadow-md rounded-2xl bg-clip-border">
-  <div class="flex flex-col justify-center flex-auto p-6 text-center">
-  <img src="./assets/emojis/party.png" alt="Cartoon" className="absolute bottom-0 right-0 w-16 h-16 m-4" />
-   
-  </div>
-</div>
+
+
             </div>
+            <img src="./assets/emojis/party.png" alt="Cartoon" className="absolute bottom-0 right-0 w-16 h-16 m-4" />
           </div>
+
         </div>
 
         {/* end of habits */}
