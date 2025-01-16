@@ -16,7 +16,7 @@ function App() {
           ? 'bg-blue-500'
           : 'bg-green-500';
   return (
-    <div className=" bg-gray-50 h-full max-h-screen">
+    <div className=" bg-gray-50 h-full max-h-screen ">
       <div className="ease-soft-in-out  relative h-full max-h-screen bg-gray-50 transition-all duration-200 m-6">
         <nav className="absolute z-20 flex flex-wrap items-center justify-between w-full px-6 py-2  text-white transition-all shadow-none duration-250 ease-soft-in lg:flex-nowrap lg:justify-start" >
           <div className="flex items-center justify-between w-full px-6 py-1 mx-auto flex-wrap-inherit">
@@ -45,14 +45,15 @@ function App() {
 
           </div>
         </nav>
+        {/* /* /* header quotes   */}
 
         <div class="w-full px-6 mx-auto">
-          {/* /* header quotes */}
-
           <div class="relative flex items-center p-0 mt-6 overflow-hidden bg-center bg-cover min-h-75 rounded-2xl" style={{ backgroundImage: "url('../assets/img/curved-images/curved0.jpg')", backgroundPositionY: "50%", }}>
             <span class="absolute inset-y-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-purple-700 to-pink-500 opacity-60"></span>
             <div class="flex-none w-auto max-w-full px-3 py-3 my-auto">
-              <div class="h-full flex px-6">
+              <div class="h-full flex items-center px-6">
+                <span><img src="./assets/emojis/flower.png" alt="Cartoon" className="w-30 h-30 opacity-200" /></span>
+
                 <h1 class="mb-1 py-2 px-2 text-6xl">
                   <span class="text-rose-700">N</span>ext
                 </h1>
@@ -60,9 +61,8 @@ function App() {
                   <span class="text-rose-700">S</span>tep
                 </h1>
               </div>
-
             </div>
-            {/* //add a div there that shall apear on bootom right with pink 500 and h3 tag saying we help u acheive dreams */}
+
             <div class="absolute bottom-20 right-0 p-2 bg-pink-500 rounded-tl-xl rounded-bl-2xl opacity-90">
               <h5 class="text-white">We help you achieve your dreams</h5>
             </div>
@@ -186,7 +186,7 @@ function App() {
 
 
             </div>
-            <img src="./assets/emojis/party.png" alt="Cartoon" className="absolute bottom-0 right-0 w-16 h-16 m-4" />
+            <img src="./assets/emojis/butterfly.png" alt="Cartoon" className="absolute bottom-0 right-0 w-24 h-24 m-4 transform -rotate-12" />
           </div>
 
         </div>
