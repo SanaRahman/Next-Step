@@ -7,15 +7,17 @@ function AddHabit() {
     const [endDate, setEndDate] = useState(null);
     return (
         <div>
-            <main class="m-5 mt-0 transition-all duration-200 ease-soft-in-out pb-3 ">
-                <section class="mb-8 ">
+            <main class="m-5 transition-all duration-200 ease-soft-in-out pb-3 mt-16">
+                <section >
 
                     {/* main dev */}
                     <div class="relative flex items-start pt-12 pb-12 m-4 overflow-hidden bg-center bg-cover  rounded-xl" >
 
 
 
-                        <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-purple-700 to-pink-500 opacity-30"></span>
+                        <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-to-tl from-purple-700 to-pink-500 opacity-30">
+
+                        </span>
                         <div class="absolute top-8 left-12">
                             <h3 class="text-fuchsia-800">New Habit</h3>
                         </div>

@@ -352,6 +352,7 @@ module.exports = {
       xs: "20rem",
       sm: "24rem",
       md: "28rem",
+      xmd: "32rem",
       lg: "32rem",
       xl: "36rem",
       "2xl": "42rem",
