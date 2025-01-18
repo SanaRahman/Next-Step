@@ -22,14 +22,14 @@ function App() {
           </div>
         </nav>
 
-        {/* Header */}
+        {/* --------------------------------Header */}
         <Header />
-        {/* End Header */}
+        {/* --------------------------------End Header */}
 
         <HabitTracker onAddHabitClick={scrollToAddHabit} />
 
 
-        {/* /* habits Section */}
+        {/* --------------------------------- habits Section */}
 
         <div class="flex-none w-1/8 max-w-full px-3 mt-6 m-5 relative">
           <div class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 shadow-lg rounded-2xl bg-clip-border">
@@ -37,29 +37,22 @@ function App() {
               <h3 class="pl-8 text-fuchsia-800">Habits</h3>
               <BsStars className="text-yellow-500 ml-2" size={40} />
             </div>
-
             <div class="w-full px-8 pb-6 mx-auto">
               <div class="flex flex-wrap mx-3">
-
-                { /* Add loop here to show habits */}
-                <Habits  />
-                {/* end loop here */}
-
+                <Habits />
                 <NewHabit onNewHabitClick={scrollToAddHabit} />
               </div>
             </div>
+
             <img src="./assets/emojis/butterfly.png" alt="Cartoon" className="absolute bottom-0 right-0 w-24 h-24 m-4 transform -rotate-12" />
           </div>
         </div>
 
-        {/* end of habits */}
+        {/* ----------------------------------------end of habits */}
 
         <div ref={addHabitRef}>
           <AddHabit />
         </div>
-
-
-
       </div>
     </div>
   );
