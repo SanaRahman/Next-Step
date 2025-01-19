@@ -5,15 +5,33 @@ import NewHabit from './components/NewHabit';
 import Header from './components/Header';
 import HabitTracker from './components/HabitTracker';
 import AddHabit from './components/AddHabit';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import axios from 'axios';
 function App() {
   const addHabitRef = useRef(null);
+  const [habits, setHabits] = useState([]);
   const scrollToAddHabit = () => {
     if (addHabitRef.current) {
       addHabitRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
+  const addNewHabit = (habit) => {
+    setHabits([...habits, habit]);
+  };
+ 
+  useEffect(() => {
+    axios.get('http://127.0.0.1:5000/habits')
+        .then((response) => {
+            setHabits(response.data || []);
+            console.log(habits);
+            
+        })
+        .catch((error) => {
+            console.log("error");
+            
+            console.error('Error fetching habits:', error);
+        });
+}, []);
   return (
     <div className=" bg-gray-50 h-full max-h-screen mb-6">
       <div className="ease-soft-in-out  relative h-full max-h-screen bg-gray-50 transition-all duration-200 m-6">
@@ -26,7 +44,11 @@ function App() {
         <Header />
         {/* --------------------------------End Header */}
 
-        <HabitTracker onAddHabitClick={scrollToAddHabit} />
+        <HabitTracker 
+        habits={habits} 
+        setHabits={setHabits}
+        onAddHabitClick={scrollToAddHabit} 
+        />
 
 
         {/* --------------------------------- habits Section */}
@@ -37,10 +59,12 @@ function App() {
               <h3 class="pl-8 text-fuchsia-800">Habits</h3>
               <BsStars className="text-yellow-500 ml-2" size={40} />
             </div>
-            <div class="w-full px-8 pb-6 mx-auto">
-              <div class="flex flex-wrap mx-3">
-                <Habits />
-                <NewHabit onNewHabitClick={scrollToAddHabit} />
+            <div class="w-full  pb-6 mx-auto">
+              <div class="flex flex-wrap mx-3 justify-center">
+                <Habits 
+                 setHabits={setHabits}
+                 habits={habits} />
+                {/* <NewHabit onNewHabitClick={scrollToAddHabit} /> */}
               </div>
             </div>
 
@@ -51,7 +75,7 @@ function App() {
         {/* ----------------------------------------end of habits */}
 
         <div ref={addHabitRef}>
-          <AddHabit />
+        <AddHabit addNewHabit={addNewHabit} />
         </div>
       </div>
     </div>
