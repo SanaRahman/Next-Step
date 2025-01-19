@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillFire } from 'react-icons/ai';
 
 const Header = () => {
   return (
@@ -40,17 +41,28 @@ const Header = () => {
             <div class="relative right-0">
               <ul class="relative flex flex-wrap p-1 list-none bg-transparent rounded-xl" nav-pills role="tablist">
                 {/* streak */}
-                <li class="z-30 flex-auto text-center">
-                  <a class="z-30 block w-full px-0 py-1 mb-0 transition-all border-0 rounded-lg ease-soft-in-out bg-inherit text-slate-700" nav-link active href="javascript:;" role="tab" aria-selected="true">
-                    <span class="ml-1">Streak 5</span>
-                  </a>
+                <li class=" ml-80 flex justify-between ">
+                  {/* <a class="z-30 block w-full px-0 py-1 mb-0 transition-all border-0 rounded-lg ease-soft-in-out bg-inherit text-slate-700" nav-link active href="javascript:;" role="tab" aria-selected="true"> */}
+                  <strong className="text-slate-700 mr-1">Streak</strong>
+                  <div>
+                    <AiFillFire className="h-5 w-5 text-orange-500" />
+                    <span className="ml-3 align-center text-md text-gray-600 font-bold">5</span>
+                  </div>
+                  {/* </a> */}
                 </li>
+                {/* <li className="relative flex justify-between items-center block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
+                                              <strong className="text-slate-700">Streak</strong>
+                                              <div>
+                                                <AiFillFire className="h-5 w-5 text-orange-500" />
+                                                <span className="ml-1 text-sm text-gray-600 font-bold">{habit.streak}</span>
+                                              </div>
+                                            </li> */}
                 {/* MileStone */}
-                <li class="z-30 flex-auto text-center">
+                {/* <li class="z-30 flex-auto text-center">
                   <a class="z-30 block w-full px-0 py-1 mb-0 transition-all border-0 rounded-lg ease-soft-in-out bg-inherit text-slate-700" nav-link href="javascript:;" role="tab" aria-selected="false">
                     <span class="ml-1">MileStone</span>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
