@@ -42,7 +42,11 @@ GitHub Copilot was instrumental in building the **NextStep** project, making dev
 
 ## Project Demo
 
-Here’s a demo of the project:  
+Here’s a demo of the project:
+
 <video width="720" height="300" controls>
   <source src="./demo.mp4" type="video/mp4">
 </video>
+
+Or view it directly: [Demo Link](https://drive.google.com/file/d/1Sdyss20W3Rd1bf5cBJRkrdKxR62lMMKu/view)
+
