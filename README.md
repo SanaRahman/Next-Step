@@ -15,25 +15,38 @@ This project focuses on making habit tracking fun, easy, and visually appealing,
 
 ## Experience with GitHub Copilot
 
-GitHub Copilot was incredibly helpful in building the front end of the NextStep project. Here's a breakdown of my experience:
+GitHub Copilot was instrumental in building the **NextStep** project, making development seamless and significantly more productive. Here's an overview of the experience:
 
-- **Frontend Development**: Copilot made it super easy to write and alter code in Visual Studio. I was able to instantly select the part of the code I wanted to modify and get relevant solutions right away. The inline chat feature was a huge time-saver—no need to copy-paste code anymore! Instead, I could communicate directly with Copilot and get suggestions instantly.
-  
-  -- Workspace Efficiency: By using the "workspace" tag in the inline chat, I was able to apply changes across multiple files in seconds. This feature saved me a lot of time, as I didn't have to manually go through every file and make changes one by one.
+### Frontend Development
 
-  -- Overall Experience : GitHub Copilot helped me build the front end in the blink of an eye. The overall experience was fantastic, and I truly appreciate how seamless and efficient the workflow became with Copilot’s assistance.
+- **Code Assistance**: Writing and modifying the frontend code in Visual Studio became remarkably easy with Copilot. Its suggestions were contextual and accurate, allowing me to implement changes effortlessly.  
+- **Inline Chat Feature**: The inline chat feature was a game-changer. It enabled direct communication with Copilot within the IDE, saving time otherwise spent searching for solutions or copy-pasting code.  
+- **Workspace Efficiency**: Using the "workspace" tag, I could apply changes across multiple files simultaneously. This feature streamlined the process of maintaining consistency throughout the codebase.  
+- **Overall Experience**: Copilot made frontend development fast and efficient, enabling me to focus on designing a user-friendly interface while ensuring high code quality.
 
-### Suggested Improvement:
-- If I select a portion of code for modification, it would be ideal if Copilot only made changes to that specific part. Currently, when using the inline chat, it sometimes uncomments lines of code, which isn't always necessary. This small tweak could make the process even more efficient.
+### Backend Development
+
+- **Database Integration**: Copilot simplified integrating PostgreSQL with Flask. From setting up database connections to writing SQL queries, its suggestions were accurate and secure, preventing issues like SQL injection with parameterized queries.  
+- **Code Optimization**: Repetitive tasks like table creation, CRUD operations, and input validation were streamlined with Copilot’s intelligent suggestions, reducing boilerplate code and boosting efficiency.  
+- **Error Handling and Debugging**: Copilot’s real-time feedback for debugging and error handling was invaluable, helping me resolve issues quickly without breaking my workflow.  
+- **Inline Chat for Backend**: The inline chat feature allowed me to request specific changes or explanations for backend logic directly in the IDE. This improved efficiency and kept the development process smooth.  
+- **Overall Experience**: Copilot transformed backend development into an efficient and enjoyable process. Its ability to provide context-aware recommendations saved time and improved the overall quality of the code.
+
+### Suggested Improvement
+- When selecting a portion of code for modification, Copilot should prioritize only the selected part. Occasionally, the inline chat would uncomment unrelated lines, which could be avoided to enhance precision.
 
 ## Media
-![Screenshot](ss1.png)
-![Screenshot](./ss2.png)
-![Screenshot](./ss3.png)
-# Project Demo
+![Screenshot](ss1.png)  
+![Screenshot](ss2.png)  
+![Screenshot](ss3.png)  
+
+## Project Demo
 
 Here’s a demo of the project:
+
 <video width="720" height="300" controls>
   <source src="./demo.mp4" type="video/mp4">
 </video>
+
+Or view it directly: [Demo Link](https://drive.google.com/file/d/1Sdyss20W3Rd1bf5cBJRkrdKxR62lMMKu/view)
 
