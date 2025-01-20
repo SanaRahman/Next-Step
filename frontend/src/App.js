@@ -22,9 +22,7 @@ function App() {
   useEffect(() => {
     axios.get('http://127.0.0.1:5000/habits')
         .then((response) => {
-            setHabits(response.data || []);
-            console.log(habits);
-            
+            setHabits(response.data || []); 
         })
         .catch((error) => {
             console.log("error");
