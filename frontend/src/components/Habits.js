@@ -5,16 +5,20 @@ const Habits = ({setHabits, habits}) => {
 
 
     function getMilestonePercentage(habit) {
-         return Math.min((habit.streak / habit.goal) * 100,100) 
+      console.log(habit.streak,habit.goal);
+         return Math.min((habit.streak / habit.goal) * 100,100);
+         
+         
         };
 
         return (
             <>
               {habits.map((habit) => {
                 const milestonePercentage = getMilestonePercentage(habit);
+  
                 return (
                   milestonePercentage === 100 ? (
-                    <div className="  w-full max-w-full px-6 py-3 lg-max:mt-4 xl:w-3/10" key={habit.id}>
+                    <div key={habit.id} className="  w-full max-w-full px-6 py-3 lg-max:mt-4 xl:w-3/10">
                       <div className="  relative flex flex-col p-5 px-6 h-full min-w-0 break-words bg-white border-0 shadow-md rounded-2xl bg-clip-border">
                         <div className="pb-0 mb-0 bg-white border-b-0 rounded-t-2xl">
                           <div className="flex flex-wrap -mx-3">
@@ -82,6 +86,8 @@ const Habits = ({setHabits, habits}) => {
                             <li className="mb-2 mt-2 relative flex justify-between items-center block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-sm text-inherit">
                               <strong className="text-slate-700">Acheive Till</strong>
                               <div>
+                               
+                                
                                 <span className="ml-1 text-sm text-gray-600 font-bold">{new Date(habit.enddate).toLocaleDateString()}</span>
                               </div>
                             </li>

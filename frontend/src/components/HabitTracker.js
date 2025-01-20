@@ -78,9 +78,9 @@ const HabitTracker = ({ habits, setHabits, onAddHabitClick }) => {
     };
   
     if (habits && habits.length) {
-      fetchCheckedDays();
+      // fetchCheckedDays();
     }
-  }, [habits]);
+  }, []);
   
 
   const toggleCheckmark = (habitId, day) => {
@@ -93,14 +93,14 @@ const HabitTracker = ({ habits, setHabits, onAddHabitClick }) => {
   
       if (dateIndex === -1) {
         // Add the date if not already present
-        sendToDatabase(habitId, formattedDate, true);
+        // sendToDatabase(habitId, formattedDate, true);
         return {
           ...prev,
           [habitId]: [...habitDates, formattedDate],
         };
       } else {
         // Remove the date if it's already present
-        sendToDatabase(habitId, formattedDate, false);
+        // sendToDatabase(habitId, formattedDate, false);
         return {
           ...prev,
           [habitId]: habitDates.filter((date) => date !== formattedDate),

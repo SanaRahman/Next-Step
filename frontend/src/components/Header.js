@@ -32,7 +32,7 @@ const Header = () => {
           <div class="flex-none w-auto max-w-full px-3 my-auto">
             <div class="h-full">
               <p class="mb-0 font-semibold leading-normal  text-slate-600 ">Welcome</p>
-              <h5 class="mb-1 text-fuchsia-800">Sana Rahman</h5>
+              <h5 class="mb-1 text-fuchsia-800">UserName</h5>
 
             </div>
           </div>

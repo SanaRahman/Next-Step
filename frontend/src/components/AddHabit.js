@@ -13,7 +13,7 @@ function AddHabit({ addNewHabit }) {
     const calculateDaysInRange = (startDate, endDate) => {
         const start = new Date(startDate);
         const end = new Date(endDate);
-        const timeDifference = end - start;
+        const timeDifference = end - start-1;
         return timeDifference / (1000 * 3600 * 24); // returns days
       };
 
@@ -27,7 +27,12 @@ function AddHabit({ addNewHabit }) {
        
         // API call to create a habit
         try {
-            let goal =calculateDaysInRange(startDate, endDate);
+            // console.log(startDate);
+            let startdate=startDate.toUTCString()
+            let enddate=endDate.toUTCString()
+           
+            let goal =calculateDaysInRange(startdate, enddate).toFixed(0);
+            let streak=0;
             const response = await axios.post('http://127.0.0.1:5000/habits', {
                 name,
                 description,
@@ -41,8 +46,8 @@ function AddHabit({ addNewHabit }) {
             setDescription('');
             setStartDate(null);
             setEndDate(null);
-            
-            addNewHabit({ name, description, startDate, endDate, goal });
+
+            addNewHabit({ name, description, startdate, enddate, goal,streak });
         } catch (error) {
             setMessage(error.response?.data?.error || "An error occurred. Please try again.");
         }
